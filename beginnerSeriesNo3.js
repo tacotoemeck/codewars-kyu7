@@ -11,32 +11,6 @@
 // GetSum(-1, 2) == 2  // -1 + 0 + 1 + 2 = 2
 
 
-function GetSum(a,b) {
-
-	let sortedArr = [a,b].sort();
-	let result= [];
-
-	for ( let i = sortedArr[0]; i <= sortedArr[1]; i++) {
-		result.push(i)
-	}
-	return result.reduce((a,b) => a + b)
-}
-
-GetSum(-1, 2)
-
-//
-
-function GetSum(a,b) {
-
-arguments.sort()
-if ( a === b ) return [a]
-return [a, ...GetSum(a+1, b)]
-
-}
-
-GetSum(2, 0)
-
-//
 
 function GetSum(a,b) {
 
