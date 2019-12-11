@@ -4,7 +4,7 @@
 
 function divCon(x){
 
-let numbersTotal = x.filter(number => typeof number == "number").reduce((a,b)=> a+b);
-let stringsTotal = x.filter(string => typeof string == "string" ).reduce((a,b) => Number(a) + Number(b));
+let numbersTotal = x.filter(number => typeof number == "number").reduce((a,b)=> a+b, 0);
+let stringsTotal = x.filter(string => typeof string == "string" ).reduce((a,b) => Number(a) + Number(b), 0);
 return numbersTotal - stringsTotal;
 }
